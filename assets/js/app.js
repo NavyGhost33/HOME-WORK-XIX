@@ -35,3 +35,13 @@ if(isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
 
 
 // TASK #A2
+
+let year = parseInt(prompt("Enter any year."));
+
+if(isNaN(year)){
+    alert("Invalid data");
+} else if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)){
+    alert(`${year} is leap year!`)
+} else {
+    alert(`${year} is common year`);
+}
